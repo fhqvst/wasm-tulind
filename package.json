@@ -10,7 +10,7 @@
     "emcc-path": "emcc-path",
     "copyasm": "copyasm",
     "build:native": "autogypi -r build && node-gyp -C build/native configure build && copyasm build/native dist",
-    "build:asmjs":  "autogypi -r build && node-gyp -C build/asmjs  configure build --asmjs=1 && copyasm build/asmjs dist",
+    "build:asmjs": "autogypi -r build && node-gyp -C build/asmjs  configure build --asmjs=1 && copyasm build/asmjs dist",
     "build:tulip": "cd tulip && make tiamalgamation",
     "install": "make --directory ./tulip tiamalgamation"
   },
@@ -18,7 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "autogypi": "^0.2.2",
-    "nbind": "^0.3.14",
+    "nbind": "git+https://github.com/fhqvst/nbind.git#fix-asm",
     "node-gyp": "^3.6.2"
   }
 }
