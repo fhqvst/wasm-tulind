@@ -1,6 +1,6 @@
 {
-  "name": "tulip",
-  "version": "1.0.0",
+  "name": "wasm-tulind",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,8 @@
     "copyasm": "copyasm",
     "build:native": "autogypi -r build && node-gyp -C build/native configure build && copyasm build/native dist",
     "build:asmjs": "autogypi -r build && node-gyp -C build/asmjs  configure build --asmjs=1 && copyasm build/asmjs dist",
-    "build:tulip": "cd tulip && make tiamalgamation",
-    "install": "make --directory ./tulip tiamalgamation"
+    "build:tulip": "cd tulipindicators && make tiamalgamation",
+    "install": "make --directory ./tulipindicators tiamalgamation"
   },
   "author": "",
   "license": "ISC",
